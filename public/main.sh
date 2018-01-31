@@ -2,8 +2,8 @@
 
 # main file
 
-# source all lib's
-source /usr/lib/yosh/autoloader.sh
+# use autoloader.sh
+source /usr/share/yosh/autoloader.sh
 
 # get GET and POST and COOKIE variable
 http::read::get
