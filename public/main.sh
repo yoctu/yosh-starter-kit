@@ -2,7 +2,7 @@
 
 # main file
 
-# use autoloader.sh
+# use autoloader
 source /usr/share/yosh/autoloader.sh
 
 # get GET and POST and COOKIE variable
@@ -25,7 +25,7 @@ http::send::out
 
 # send data from route
 [[ -s "$tmpStdout" ]] && cat $tmpStdout
-[[ -s "$tmpStderr" ]] && cat $tmpStderr
+[[ -s "$tmpStderr" ]] && $logger "crit" "STDERR: $(cat $tmpStderr)"
 
 # exit like a pro
 exit
