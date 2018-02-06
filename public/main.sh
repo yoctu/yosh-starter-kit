@@ -25,8 +25,6 @@ http::send::out
 
 # send data from route
 [[ -s "$tmpStdout" ]] && cat $tmpStdout
-
-sed -i 's/^$//g' $tmpStderr
 [[ -s "$tmpStderr" ]] && $logger "crit" "STDERR: $(cat $tmpStderr)"
 
 # exit like a pro
