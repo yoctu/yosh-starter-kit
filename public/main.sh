@@ -11,8 +11,8 @@ http::read::post
 http::read::cookie
 
 # redirect stdout and stderr of function to file, to print after
-tmpStdout="$(mktemp)"
-tmpStderr="$(mktemp)"
+tmpStdout="$(mktemp -p $TMPDIR)"
+tmpStderr="$(mktemp -p $TMPDIR)"
 
 # Clean TMP file on exit
 trap "rm $tmpStdout; rm $tmpStderr" EXIT
