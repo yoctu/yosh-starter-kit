@@ -46,24 +46,15 @@ while getopts "${OPTS}" arg; do
 done
 shift $((OPTIND - 1))
 
-REQUEST_METHOD="${REQUEST_METHOD:-GET}"
+REQUEST_METHOD="${REQUEST_METHOD:-CLI}"
 [[ -z "$REQUEST_URI" ]] && _quit 2 "$HELP"
 
 # Set DocumentRoot
 DOCUMENT_ROOT="$(readlink -f $0)"
 DOCUMENT_ROOT="${DOCUMENT_ROOT%/*}"
 
-# source all lib's
-for file in ${DOCUMENT_ROOT%/}/../lib/*
-do
-    source $file
-done
-
-# source all funcs
-for file in ${DOCUMENT_ROOT%/}/../func/*
-do
-    source $file
-done
+# use autoloader
+source /usr/share/yosh/autoloader.sh
 
 # Source the config file
 [[ -f "$_config_file" ]] && source $_config_file 
