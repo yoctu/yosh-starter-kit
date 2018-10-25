@@ -26,4 +26,7 @@ AUTH['/img/.*':'GET']="none"
 AUTH['/js/.*':'GET']="none"
 AUTH['/fonts/.*':'GET']="none"
 AUTH['/':'GET']="htpasswd"
-AUTH['/':'POST']="htpasswd"
+
+LOGIN['/':'GET']="auth::custom::request"
+LOGIN['/':'POST']="auth::custom::request"
+
