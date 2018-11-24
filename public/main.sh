@@ -1,3 +1,4 @@
+#!/bin/bash
 # We use the defaul main.sh from yosh
 
 if [[ -f "/usr/share/yosh/main.sh" ]] 
