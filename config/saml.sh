@@ -1,4 +1,8 @@
-_saml_host_url="HOST"
-_saml_xml_template="/var/tmp/esm/config/saml/template/auth.xml"
-_saml_idp_xml="/var/tmp/esm/config/saml/idp/idp.xml"
-_saml_priv_key="/var/tmp/esm/config/saml/keys/private.key"
+declare -A SAML
+
+#SAML['spurl']="HOST"
+#SAML['authtemplate']="${DOCUMENT_ROOT%/}../config/saml/template/auth.xml"
+#SAML['idpxml']="idp file"
+#SAML['privkey']="private_key"
+#SAML['logoutresponsexml']="${DOCUMENT_ROOT%/}../config/saml/template/logoutresponse.xml"
+#SAML['logoutrequestexml']="${DOCUMENT_ROOT%/}../config/saml/template/logoutrequest.xml"
