@@ -1,11 +1,33 @@
-# Yosh Starter Kit
+# Upela Widget Demo
 
-## Apache2 configuration for using
+## Install Yosh
 
-Mods to enable:
-    - cgi
+```
+wget -qO - https://ppa.yoctu.com/archive.key | sudo apt-key add -
+sudo add-apt-repository "deb https://ppa-public.yoctu.com/ all unstable" 
+sudo apt-get update
+sudo apt-get install yosh
+```
 
-Vhosts config file:
+## Git Clone Repo
+
+```
+cd /var/www/html 
+git clone https://github.com/KLHCOMPETENCE/upelaWidget.git
+
+```
+
+## Configure Apache
+
+### enable cgi module
+
+```
+sudo a2enmod cgid && sudo service apache2 restart
+
+```
+
+### add vhost
+
 ```
     define documentroot YOUR/DOCUMENTROOT
 
@@ -31,9 +53,3 @@ Vhosts config file:
     undefine documentroot
 ```
 
-## HowTo
-
- 
-
-## Requirements
-- yosh
