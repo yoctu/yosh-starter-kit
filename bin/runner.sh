@@ -11,6 +11,7 @@ $USAGE
 
     Options:
         -c      Config File, should contain for example the POST Data for the request url
+        -r      Request url (Route)
         -g      Request Method
         -s      simulate
         -v      set -v
@@ -44,9 +45,6 @@ while getopts "${OPTS}" arg; do
     esac
 done
 shift $((OPTIND - 1))
-
-[[ -z "$1" ]] && _quit 0 "$HELP"
-REQUEST_URI="/$1"
 
 REQUEST_METHOD="${REQUEST_METHOD:-CLI}"
 [[ -z "$REQUEST_URI" ]] && _quit 2 "$HELP"
