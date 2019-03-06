@@ -4,7 +4,7 @@
 
 ```
 wget -qO - https://ppa.yoctu.com/archive.key | sudo apt-key add -
-sudo add-apt-repository "deb https://ppa-public.yoctu.com/ all unstable" 
+sudo add-apt-repository "deb https://ppa-public.yoctu.com/ all stable" 
 sudo apt-get update
 sudo apt-get install yosh
 ```
