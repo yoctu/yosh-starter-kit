@@ -1,4 +1,4 @@
-# Upela Widget Demo
+# Yosh Starter Kit
 
 ## Install Yosh
 
