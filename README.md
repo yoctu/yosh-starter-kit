@@ -13,7 +13,7 @@ sudo apt-get install yosh
 
 ```
 cd /var/www/html 
-git clone https://github.com/KLHCOMPETENCE/upelaWidget.git
+git clone https://github.com/yoctu/yosh-starter-kit
 
 ```
 
