@@ -1,4 +1,4 @@
-application_name="yosh-starter-kit"
+application_name="yolulu"
 html_dir="${DOCUMENT_ROOT%/}/../html"
 css_dir="${DOCUMENT_ROOT%/}/../css"
 js_dir="${DOCUMENT_ROOT%/}/../js"
